@@ -2,7 +2,6 @@ import os
 import re
 
 from .conftest import root_dir
-
 class TestWorkflow:
 
     def test_workflow(self):

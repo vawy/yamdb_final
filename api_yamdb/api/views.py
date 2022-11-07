@@ -12,7 +12,6 @@ from .serializers import (CategorySerializer, CommentSerializer,
                           GenreSerializer, ReviewSerializer,
                           TitleCreateSerializer, TitleSerializer)
 from .utils import ListCreateDestroyMixins
-
 class CategoryViewSet(ListCreateDestroyMixins):
     """
     Представление модели Category.

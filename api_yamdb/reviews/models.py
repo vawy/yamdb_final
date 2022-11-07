@@ -1,7 +1,6 @@
 from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
 from users.models import User
-
 class Category(models.Model):
     name = models.CharField(
         'Название категории', max_length=200

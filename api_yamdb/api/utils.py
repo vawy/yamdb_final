@@ -1,7 +1,6 @@
 from permissions import ReadOrAdminPermission
 from rest_framework import filters, mixins, viewsets
 
-
 class ListCreateDestroyMixins(mixins.ListModelMixin,
                               mixins.CreateModelMixin,
                               mixins.DestroyModelMixin,

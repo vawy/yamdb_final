@@ -6,7 +6,6 @@ from api_yamdb.settings import SECRET_KEY
 
 from .models import VerificationEmailKey
 
-
 def get_key():
     """Генерация ключа по sha256."""
     # key = ''.join(choice(ascii_lowercase) for _ in range(24))

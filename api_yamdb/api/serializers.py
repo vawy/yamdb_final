@@ -1,9 +1,8 @@
 from datetime import datetime
 
-from rest_framework import serializers
 from django.shortcuts import get_object_or_404
-
-from reviews.models import Comment, Review, Category, Genre, Title
+from rest_framework import serializers
+from reviews.models import Category, Comment, Genre, Review, Title
 
 
 class CategorySerializer(serializers.ModelSerializer):

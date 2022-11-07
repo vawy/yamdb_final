@@ -1,10 +1,9 @@
+from api.permissions import IsAdminPermission, IsUserPermission
 from rest_framework import filters, status, viewsets
 from rest_framework.decorators import action
 from rest_framework.pagination import LimitOffsetPagination
 from rest_framework.response import Response
 from rest_framework.viewsets import GenericViewSet, mixins
-
-from api.permissions import IsAdminPermission, IsUserPermission
 from users.models import User
 from users.serializers import (ConfirmationCodeSerializer, TokenSerializer,
                                UserMeSerializer, UserSerializer)

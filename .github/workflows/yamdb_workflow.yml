@@ -25,6 +25,7 @@ jobs:
     - name: Test with flake8 and django tests
       run: |
         # запуск проверки проекта по flake8
+        python -m isort
         python -m flake8
         cd api_yamdb/
         python manage.py test

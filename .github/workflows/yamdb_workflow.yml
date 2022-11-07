@@ -26,6 +26,8 @@ jobs:
       run: |
         # запуск проверки проекта по flake8
         python -m flake8
+        cd api_yamdb/
+        python manage.py test
     - name: Start pytest
       run: |
         # запуск pytest из yamdb_final

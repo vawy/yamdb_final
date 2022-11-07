@@ -2,6 +2,8 @@ import os
 import re
 
 from .conftest import infra_dir_path, root_dir
+
+
 class TestDockerfileCompose:
 
     def test_infra_structure(self):

@@ -2,6 +2,8 @@ import os
 from datetime import timedelta
 
 from dotenv import load_dotenv
+
+
 load_dotenv('infra/.env')
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)

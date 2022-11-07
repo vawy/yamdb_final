@@ -8,6 +8,8 @@ from users.models import User
 from users.serializers import (ConfirmationCodeSerializer, TokenSerializer,
                                UserMeSerializer, UserSerializer)
 from users.verifications import send_code
+
+
 class CreateModelViewSet(GenericViewSet, mixins.CreateModelMixin):
     pass
 

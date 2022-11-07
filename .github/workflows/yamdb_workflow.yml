@@ -18,7 +18,7 @@ jobs:
         # обновление pip
         python -m pip install --upgrade pip 
         # установка flake8 и его плагинов
-        pip install flake8 pep8-naming flake8-broken-line flake8-return flake8-isort
+        pip install flake8 pep8-naming flake8-broken-line flake8-return
         # установка зависимостей
         pip install -r api_yamdb/requirements.txt 
 
@@ -26,8 +26,8 @@ jobs:
       run: |
         # запуск проверки проекта по flake8
         python -m flake8
-#        cd api_yamdb/
-#        python manage.py test
+        cd api_yamdb/
+        python manage.py test
     - name: Start pytest
       run: |
         # запуск pytest из yamdb_final

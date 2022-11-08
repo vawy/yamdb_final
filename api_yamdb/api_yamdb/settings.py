@@ -11,8 +11,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('SECRET_KEY', default='djangotestkey')
-# SECRET_KEY = 'kl5&_1wi!y)i&96=r^lcz)_0vqyx$h2wy7%_lx^d*pl-h*l-o5'
+# SECRET_KEY = os.getenv('SECRET_KEY', default='djangotestkey')
+SECRET_KEY = 'kl5&_1wi!y)i&96=r^lcz)_0vqyx$h2wy7%_lx^d*pl-h*l-o5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -74,11 +74,11 @@ WSGI_APPLICATION = 'api_yamdb.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': os.getenv('DB_ENGINE', default='django.db.backends.postgresql'),
-        'NAME': os.getenv('DB_NAME', default=None),
-        'USER': os.getenv('POSTGRES_USER', default=None),
-        'PASSWORD': os.getenv('POSTGRES_PASSWORD', default=None),
-        'HOST': os.getenv('DB_HOST', default=None),
-        'PORT': os.getenv('DB_PORT', default=None)
+        'NAME': os.getenv('DB_NAME', default='postgres'),
+        'USER': os.getenv('POSTGRES_USER', default='postgres'),
+        'PASSWORD': os.getenv('POSTGRES_PASSWORD', default='postgres123'),
+        'HOST': os.getenv('DB_HOST', default='db'),
+        'PORT': os.getenv('DB_PORT', default='5432')
     }
 }
 

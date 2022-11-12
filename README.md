@@ -15,10 +15,10 @@ GithubAction
 #### Клонирование репозитория
 Клонировать репозиторий и перейти в него в командной строке:
 
-`
+```
 git clone git@github.com:vawy/yamdb_final.git
 cd api_yamdb
-`
+```
 
 #### Изменение файлов
 1) Поменять в docker-compose.yaml на
@@ -27,17 +27,17 @@ cd api_yamdb
 2) Добавить .env в корень проекта
 
 #### Запуск проекта
-`
+```
 cd infra/
 docker-compose -d --build
-`
+```
 
 #### Миграции проекта, добавление юзера, сбор статики
-`
+```
 docker-compose exec web python manage.py migrate
 docker-compose exec web python manage.py createsuperuser
 docker-compose exec web python manage.py collectstatic --no-input 
-`
+```
 
 P.s. Добавить `winpty` при ошибке:
 `

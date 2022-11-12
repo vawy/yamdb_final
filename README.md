@@ -1,8 +1,14 @@
 # Описание
 Проект YaMDB - собирает отзывы пользователей на различные произведения
 
+![workflow](https://github.com/vawy/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg) 
+
 ### Технологии
-Собран ~~из говна и палок~~ и разрабатан на фреймворке Django 2.2.16 и DRF 3.12.4
+Django 2.2.16
+DRF 3.12.4
+Python 3.7
+Gunicorn 20.0.4
+PostgreSQL
 
 
 ### Развертка и запуск проекта локально
@@ -38,7 +44,6 @@ P.s. Добавить `winpty` при ошибке:
 `
 the input device is not a TTY.  If you are using mintty, try prefixing the command with 'winpty'
 `
-
     
 ### API
 Документация API доступна по следующему эндпоинту:
@@ -79,3 +84,5 @@ the input device is not a TTY.  If you are using mintty, try prefixing the comma
 ## Автор
 
 ### Василий Вигилянский 
+
+##### IP

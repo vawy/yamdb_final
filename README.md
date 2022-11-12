@@ -4,12 +4,11 @@
 ![workflow](https://github.com/vawy/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg) 
 
 ### Технологии
-Django 2.2.16
-DRF 3.12.4
-Python 3.7
-Gunicorn 20.0.4
+Django
+DRF
+Gunicorn
 PostgreSQL
-
+GithubAction
 
 ### Развертка и запуск проекта локально
 
@@ -22,7 +21,7 @@ cd api_yamdb
 `
 
 #### Изменение файлов
-1) Поменять в docker-compose.yaml
+1) Поменять в docker-compose.yaml на
     web:
       image: ../api_yamdb
 2) Добавить .env в корень проекта
